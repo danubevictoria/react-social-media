@@ -1,0 +1,24 @@
+{
+  "name": "react-social-media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel app --watch -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danubevictoria/react-social-media.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danubevictoria/react-social-media/issues"
+  },
+  "homepage": "https://github.com/danubevictoria/react-social-media#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
