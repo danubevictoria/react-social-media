@@ -4,7 +4,7 @@ Application to display a user's information and their status updates on multiple
 
 * Constructed using React components, built using npm and Babel in a local React environment
 
-![Social Media Card](https://raw.githubusercontent.com/danubevictoria/react-social-media/master/images/social-media-card.png)
+![Social Media Card](https://raw.githubusercontent.com/danubevictoria/react-social-media/master/images/socialmediacard.png)
 
 ### To run:
 
