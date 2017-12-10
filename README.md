@@ -1,6 +1,6 @@
 # Social Media Card
 
-Application to display a user's information and their status updates on multiple media platforms.
+Application to display a user's profile and their status updates on multiple media platforms.
 
 * Constructed using React components, built using npm and Babel in a local React environment
 
