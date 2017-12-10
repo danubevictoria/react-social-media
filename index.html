@@ -44,26 +44,66 @@
     ]
   }
 
-  ReactDOM.render(
-    //In JSX, class needs to be className because class is a reserved word in JS
-    <div className="card">
-      <div className="photo">
-        <img src="images/watercolor.png" alt="Photo" />
-      </div>
-      <div className="bio">
-        <h1 className="name">Chris.name</h1>
-        <h2 className="location">Brooklyn, New York</h2>
-        <div className="occupation">
-          <p>Protecting Freedom @ onemonthedu</p>
+  //In JSX, class needs to be className because class is a reserved word in JS
+  //Every component will be a class
+  //Extends makes a subclass of react component object. Building on top of the library/framework
+
+  //Card Component
+  class Card extends React.Component {
+    render() {
+      return(
+        <div className="card">
+          <Photo />
+          <Bio />
+          <Updates />
         </div>
-      </div>
-      <div className="updates">
-        <ul>
-          <li className="update">Updates</li>
-          <li className="update">Updates</li>
-        </ul>
-      </div>
-    </div>,
+      )
+    }
+  }
+
+  //Photo component
+  class Photo extends React.Component {
+    render() {
+      return (
+        <div className="photo">
+          <img src="images/watercolor.png" alt="Photo" />
+        </div>
+      )
+    }
+  }
+
+  //Bio Component
+  class Bio extends React.Component {
+    render() {
+      return (
+        <div className="bio">
+          <h1 className="name">Chris.name</h1>
+          <h2 className="location">Brooklyn, New York</h2>
+          <div className="occupation">
+            <p>Protecting Freedom @ onemonthedu</p>
+          </div>
+        </div>
+      )
+    }
+  }
+
+  //Updates Component
+  class Updates extends React.Component {
+    render() {
+      return (
+        <div className="updates">
+          <ul>
+            <li className="update">Updates</li>
+            <li className="update">Updates</li>
+          </ul>
+        </div>
+      )
+    }
+  }
+
+  ReactDOM.render(
+    //Can create a new tag that can be reused to create a new card
+    <Card />,
     document.getElementById('app')
   );
   </script>
